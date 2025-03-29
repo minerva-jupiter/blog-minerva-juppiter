@@ -1,7 +1,7 @@
 # blog-minerva-juppiter
 
 this app is used for my blog.
-this has not lisence and MUST not copy or fork before deploying data base of articles.
+this has not license and MUST not copy or fork before deploying data base of articles.
 
 
 # sv

@@ -1,2 +1,16 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<h1>Blog</h1>
+<h2>by Minerva_Juppiter</h2>
+<br/>
+<h3>Articles</h3>
+<ul>
+    {#each articles as article,index}
+        <a href="./article/{index}">
+            <li>{article.ArticleName}</li>
+        </a>
+    {/each}
+</ul>
+
+<script lang="ts">
+    import articles from "$lib/assets/articles.json";
+
+</script>
