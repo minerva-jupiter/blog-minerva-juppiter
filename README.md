@@ -1,3 +1,9 @@
+# blog-minerva-juppiter
+
+this app is used for my blog.
+this has not lisence and MUST not copy or fork before deploying data base of articles.
+
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
