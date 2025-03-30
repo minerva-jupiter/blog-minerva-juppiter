@@ -1,4 +1,4 @@
-<h3>Articles</h3>
+<h1>Articles</h1>
 <ul>
     {#each articles as article,index}
         <a href="./article/{index}">
@@ -12,15 +12,19 @@
 </script>
 
 <style>
-    h3 {
-        color: whitesmoke;
+    h1 {
         padding-left: 3rem;
     }
     ul {
         padding-left: 3rem;
+        font-size: large;
     }
     a {
         text-decoration: none;
-        color: white;
+        color: #d9d9d9;
     }
 </style>
+
+<svelte:head>
+    <title>Blog Minerva_Juppiter</title>
+</svelte:head>

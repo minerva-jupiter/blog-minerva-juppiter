@@ -19,21 +19,27 @@
 <style>
     :global(body) {
         background-color: black;
-        color: whitesmoke;
+        color: #d9d9d9;
         padding-left: 5rem;
         padding-right: 5rem;
+        font-family: "Tw Cen MT","Century Gothic","Noto Sans JP";
     }
     header {
-        background-color: #c2c2c2;
+        background-color: #d9d9d9;
         color: #0f0a05;
-        padding: 2rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
     }
     nav a {
         text-decoration: none;
         color: black;
+        font-size: large;
     }
     footer {
         background-color: #0f0a05;
+        text-align: center;
         color: gray;
         padding: 1rem;
     }
