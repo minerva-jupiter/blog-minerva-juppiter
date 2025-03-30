@@ -2,8 +2,7 @@
 	"name": "blog-minerva-juppiter",
 	"version": "0.0.1",
 	"devDependencies": {
-		"@eslint/compat": "1.2.7",
-		"@eslint/js": "9.23.0",
+	"@eslint/js": "9.23.0",
 		"@playwright/test": "1.51.1",
 		"@sveltejs/adapter-cloudflare": "6.0.1",
 		"@sveltejs/kit": "2.20.2",
