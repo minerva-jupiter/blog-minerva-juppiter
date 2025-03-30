@@ -20,17 +20,12 @@
     :global(body) {
         background-color: black;
         color: #d9d9d9;
-        padding-left: 5rem;
-        padding-right: 5rem;
         font-family: "Tw Cen MT","Century Gothic","Noto Sans JP";
     }
     header {
         background-color: #d9d9d9;
         color: #0f0a05;
-        padding-top: 1rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-bottom: 2rem;
+        padding: 3rem;
     }
     nav a {
         text-decoration: none;

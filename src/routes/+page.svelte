@@ -21,6 +21,7 @@
     }
     a {
         text-decoration: none;
+        padding: 3rem;
         color: #d9d9d9;
     }
 </style>

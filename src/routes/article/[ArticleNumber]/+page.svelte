@@ -10,3 +10,15 @@
 <h4>{articles[data.content].Date}</h4>
 
 <p>{articles[data.content].ArticleBody}</p>
+
+<style>
+    h1{
+        padding: 4rem;
+    }
+    h4 {
+        padding: 4rem;
+    }
+    p {
+        padding: 4rem;
+    }
+</style>
