@@ -7,4 +7,6 @@
 
 <h1>{articles[data.content].ArticleName}</h1>
 
+<h4>{articles[data.content].Date}</h4>
+
 <p>{articles[data.content].ArticleBody}</p>
