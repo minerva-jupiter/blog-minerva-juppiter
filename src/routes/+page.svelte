@@ -13,15 +13,15 @@
 
 <style>
     h1 {
-        padding-left: 3rem;
+        padding-left: 4rem;
     }
     ul {
-        padding-left: 3rem;
+        padding-left: 4rem;
         font-size: large;
     }
     a {
         text-decoration: none;
-        padding: 3rem;
+        padding: 4rem;
         color: #d9d9d9;
     }
 </style>

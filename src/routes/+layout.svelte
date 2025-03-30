@@ -25,7 +25,10 @@
     header {
         background-color: #d9d9d9;
         color: #0f0a05;
-        padding: 3rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
     nav a {
         text-decoration: none;

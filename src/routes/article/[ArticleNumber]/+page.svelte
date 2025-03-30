@@ -5,20 +5,17 @@
     let { data }: PageProps = $props();
 </script>
 
-<h1>{articles[data.content].ArticleName}</h1>
+<div>
+    <h1>{articles[data.content].ArticleName}</h1>
 
-<h4>{articles[data.content].Date}</h4>
+    <h4>{articles[data.content].Date}</h4>
 
-<p>{articles[data.content].ArticleBody}</p>
+    <p>{articles[data.content].ArticleBody}</p>
+</div>
 
 <style>
-    h1{
-        padding: 4rem;
-    }
-    h4 {
-        padding: 4rem;
-    }
-    p {
-        padding: 4rem;
+    div {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 </style>
