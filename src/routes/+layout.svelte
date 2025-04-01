@@ -21,6 +21,7 @@
         background-color: black;
         color: #d9d9d9;
         font-family: "Tw Cen MT","Century Gothic","Noto Sans JP";
+        margin: 0%;
     }
     header {
         background-color: #d9d9d9;

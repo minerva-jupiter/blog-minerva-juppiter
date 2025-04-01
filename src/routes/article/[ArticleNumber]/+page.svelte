@@ -19,3 +19,9 @@
         padding-right: 4rem;
     }
 </style>
+
+<svelte:head>
+    <title>
+        {articles[data.content].ArticleName}
+    </title>
+</svelte:head>
