@@ -3,6 +3,8 @@
     import articles from '$lib/assets/articles.json';
 
     let { data }: PageProps = $props();
+
+
 </script>
 
 <div>
@@ -10,13 +12,17 @@
 
     <h4>{articles[data.content].Date}</h4>
 
-    <p>{articles[data.content].ArticleBody}</p>
+    <pre>{articles[data.content].ArticleBody}</pre>
 </div>
 
 <style>
     div {
         padding-left: 4rem;
         padding-right: 4rem;
+    }
+    pre {
+        font-family: "Tw Cen MT","Century Gothic","Noto Sans JP";
+        white-space: pre-wrap;
     }
 </style>
 
