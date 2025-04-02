@@ -1,9 +1,11 @@
 <h1>Articles</h1>
 <ul>
     {#each articles as article,index}
-        <a href="./article/{index}">
-            <li>{article.ArticleName}</li>
-        </a>
+        <li>
+            <a href="./article/{index}">
+                {article.ArticleName}
+            </a>
+        </li>
     {/each}
 </ul>
 
@@ -16,12 +18,15 @@
         padding-left: 4rem;
     }
     ul {
+        padding-top: 0rem;
         padding-left: 4rem;
         font-size: large;
     }
+    li {
+        padding: 0.5rem;
+    }
     a {
         text-decoration: none;
-        padding: 4rem;
         color: #d9d9d9;
     }
 </style>
