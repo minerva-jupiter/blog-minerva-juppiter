@@ -17,12 +17,29 @@
         color: black;
         font-size: large;
     }
-    main { 
+    main h1 {
+        padding-left: 4rem;
+        padding-top: 1rem;
+    }
+    main ul {
+        padding-top: 0rem;
+        padding-left: 4rem;
+        font-size: large;
+    }
+    main a {
+        text-decoration: none;
+        color: #d9d9d9;
+    }
+    main li {
+        padding: 0.5rem;
+    }
+
+    article {
         padding-left: 4rem;
         padding-right: 4rem;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        font-family:  "Tw Cen MT","Century Gothic","Noto Sans JP";
     }
+
     footer {
         background-color: #0f0a05;
         text-align: center;
