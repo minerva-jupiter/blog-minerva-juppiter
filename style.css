@@ -35,9 +35,13 @@
     }
 
     article {
+        margin-top: 3rem;
         padding-left: 4rem;
         padding-right: 4rem;
         font-family:  "Tw Cen MT","Century Gothic","Noto Sans JP";
+    }
+    article h1 {
+        font-size: xx-large;
     }
 
     footer {
@@ -45,4 +49,5 @@
         text-align: center;
         color: gray;
         padding: 1rem;
+        margin-top: 3rem;
     }
