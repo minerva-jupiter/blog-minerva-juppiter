@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../style.css">
+        <title>古いLaptopにUbuntuServerを入れた話</title>
+    </head>
+	<body>
+        <header>
+            <h1>Blog</h1>
+            <h4>by Minerva_Juppiter</h4>
+            <nav>
+                <a href="/">Home</a>
+                /
+                <a href="/about">About</a>
+            </nav>
+        </header>
+		<article>
+			<h1>Svelteでブログを構築した。</h1>
+            <h4>2025/03/29</h4>
+			<br>
+
+			<h3 >経緯</h3>
+				<p>Gentoo OSなどのインストールに挑戦した私であったが、xtermがインストールされない等々の問題があったので、結局のところUbuntuに戻って来ることにした。</p>
+				<p>けれども、GNOMEが入っているUbuntuを私などが好くわけがないので、今回はGUI系統の一切入っていないUbuntuとして、UbuntuServerをインストールして、好き勝手にアプリケーションを入れていってしまおうという魂胆である。</p>
+			<h3>UbuntuServerのインストール</h3>
+				<p>とりあえずインストールする。</p>
+				<p>UbuntuServerのサイトからisoをダウンロードしてきて、rufusで焼いて、インストール。</p>
+				<p>GUIでとっても簡単。wifiの設定すらできてしまう。</p>
+				<p>Gentooから来た人からすると、非常に早くて快適。中で何をやっているのか見ることができないので、ちょっと残念な気もするが。</p>
+			<h3 >使うアプリをインストール</h3>
+				<h4 >i3関連</h4>
+					<p><code>xserver-xorg xinit xterm i3</code>
+					<p>ターミナルはxtermじゃなくていいと思うけど、選定がめんどくさかったので、xのデフォルトのxtermを使ってるだけ。</p>
+					<p>configファイルは私のgitに保存してるのを持ってきます。</p>
+				<h4>Font</h4>
+					<p>私はプログラマ用のフォントの可視性が非常に好きなので<code>MoralerspaceNeonNF-Regular</code>を使用します。</p>
+					<p>インストールは.ttfファイルを~/.fontsフォルダーに入れるだけ。</p>
+				<h4>IME</h4>
+					<p><code>fcitx-mozc</code></p>
+				<h4 >apt mirror</h4>
+					<p><code>sudo sed -i.bak -r 's@http://(jp\.)?archive\.ubuntu\.com/ubuntu/?@https://ftp.udx.icscoe.jp/Linux/ubuntu/@g' /etc/apt/sources.list.d/ubuntu.sources</code></p>
+				<h4>Audio</h4>
+					<p>音声出力に関係した部分を設定する。</p>
+					<code>sudo apt install alsa-base</code>
+					<code>sudo adduser {username} audio</code>
+					<p>再起動したら、音が出るようになってるはず。</p>
+				<h4>themeの設定</h4>
+					<p>なんか一括で変更できる<code>system theme</code>なるものは存在せず、そこから取得してくる系はデフォのlightテーマになりやがるので、edgeとxtermは強制でテーマを変えた。</p>
+		</article>
+		<footer>
+            <p>
+                @all right reserved by Minerva_Juppiter
+            </p>
+        </footer>
+	</body>
+</html>
