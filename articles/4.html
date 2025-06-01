@@ -29,6 +29,24 @@
 				<p>GUIでとっても簡単。wifiの設定すらできてしまう。</p>
 				<p>Gentooから来た人からすると、非常に早くて快適。中で何をやっているのか見ることができないので、ちょっと残念な気もするが。</p>
 			<h3 >使うアプリをインストール</h3>
+				<ins>
+					<h4>DNS</h4>
+						<p>DNSを設定していないと、github.comが解決されない問題があったので(google.com等は解決される)、/etc/systemd/resolved.confを書き換え。<code>DNS=1.1.1.2 1.0.0.2</code></p>
+					<h4>Network</h4>
+						<p>システムのデフォルトで、systemd-networkdが使われているけれど、設定とかがダルいので、NetworkManagerを使います。(甘え)</p>
+						<p><code>sudo apt install network-manager && vi /etc/netplan/50-cloud-init.yaml</code>して、<code>renderer: NetworkManager</code>をnetwork:2の下に明記</p>
+						<p>それから<code>sudo systemctl disable systemd-networkd</code>する。</p>
+						<p>近頃の大学ネットは不安定で、繋がらないことも多々あるので、wait-online系を切っとくと良いかな。</p>
+						<p>nmtuiは便利だけど、nmcliを使う必要のある設定をば一つ。
+							<code>
+								sudo nmcli connection show #接続一覧
+								sudo nmcli connection show "{接続機器名}" | grep metric #メトリック値確認
+								sudo nmcli connection modify "{接続機器名}" ipv4.route-metric {メトリック値}
+								sudo nmcli connection up "{接続機器名}"
+							</code>
+							で、メトリックを適切に設定してあげないと、nmtuiからは全部-1になって、不安定な大学ネットに繋がっては切れを繰り返してしまう。
+						</p>
+				</ins>
 				<h4 >i3関連</h4>
 					<p><code>xserver-xorg xinit xterm i3</code>
 					<p>ターミナルはxtermじゃなくていいと思うけど、選定がめんどくさかったので、xのデフォルトのxtermを使ってるだけ。</p>
@@ -45,6 +63,9 @@
 					<code>sudo apt install alsa-base</code>
 					<code>sudo adduser {username} audio</code>
 					<p>再起動したら、音が出るようになってるはず。</p>
+					<ins>
+						<p>alsaだけだと不便な部分があったので、pulseAudioとPipeWireもいれる。PipeWireだけにしたかったけれど、ms-edgeくんがPipeWire Onlyだと動かなかったので致し方なく。</p>
+					</ins>
 				<h4>themeの設定</h4>
 					<p>なんか一括で変更できる<code>system theme</code>なるものは存在せず、そこから取得してくる系はデフォのlightテーマになりやがるので、edgeとxtermは強制でテーマを変えた。</p>
 		</article>
