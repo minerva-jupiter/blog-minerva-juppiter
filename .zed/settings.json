@@ -1,0 +1,6 @@
+{
+  "project_name": "blog-minerva-juppiter",
+  "edit_predictions": {
+    "disabled_globs": ["*"]
+  }
+}
